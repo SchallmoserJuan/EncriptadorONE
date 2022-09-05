@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="emisor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box">
+        
+        <header>
+            <img src="img/Vector_a.png" class="logo" alt="Logo alura">
+        </header>
+        <main>
+
+            <section class="izquierda">
+                <textarea class="emisor" placeholder="Ingrese el texto aqui" cols="40" rows="1"></textarea>
+                <div class="signo">
+                    <img src="img/vector_signo.png" alt="signo">
+                    <p class="aviso">Solamente palabras en minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="encriptar" onclick="btnEncriptar(); mostrarBtn()">Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar(); mostrarBtn()">Desencriptar</button>
+                </div>
+            </section>
+
+
+            <section class="derecha">
+                <textarea class="receptor" cols="23" rows="5"></textarea>
+                <img src="img/muñeco.png" alt="Muñeco" class="muñeco">
+                <h1 class="texto">No se encontro ningún mensaje</h1>
+                <p class="parrafo">Ingresa el texto a encriptar/desencriptar</p>
+                <button class="copiar" onclick="btnCopiar(); mostrarBtn()">Copiar</button>
+            </section>
+        </main>
+
+
+    </div>
+    <script src="script.js"></script>
+
+<footer>
+    <a title="Github" href="https://github.com/SchallmoserJuan"><img src="img/logo_github.png" class="logoGithub" alt="Logo Github"></a>
+    <p class="pie">Dev /Schallmoser Juan</p>
+</footer>
+</body>
+
+
+</html>
